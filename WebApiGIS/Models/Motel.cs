@@ -15,6 +15,5 @@ namespace WebApiGIS.Models
         public User User { get; set; } = null!;
 
         public ICollection<MotelImage> MotelImages { get; set; } = [];
-
     }
 }

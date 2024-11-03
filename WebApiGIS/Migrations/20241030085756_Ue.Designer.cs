@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using NetTopologySuite.Geometries;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
@@ -12,9 +13,11 @@ using WebApiGIS.Data;
 namespace WebApiGIS.Migrations
 {
     [DbContext(typeof(WebGisDbContext))]
-    partial class WebGisDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241030085756_Ue")]
+    partial class Ue
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -297,7 +300,7 @@ namespace WebApiGIS.Migrations
                         .IsRequired()
                         .HasColumnType("geometry");
 
-                    b.Property<bool>("IsAvailable")
+                    b.Property<bool>("IsAvaileble")
                         .HasColumnType("boolean");
 
                     b.Property<bool>("IsMezzanine")
@@ -322,7 +325,7 @@ namespace WebApiGIS.Migrations
                             Capability = 2,
                             Descripption = "Mô tả cho phòng",
                             Geom = (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.7662 10.026, 105.7665 10.026, 105.7665 10.0263, 105.7662 10.0263, 105.7662 10.026))"),
-                            IsAvailable = true,
+                            IsAvaileble = true,
                             IsMezzanine = true,
                             MotelId = 1,
                             Price = 1200
@@ -333,7 +336,7 @@ namespace WebApiGIS.Migrations
                             Capability = 2,
                             Descripption = "Mô tả cho phòng",
                             Geom = (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.7667 10.026, 105.767 10.026, 105.767 10.0263, 105.7667 10.0263, 105.7667 10.026))"),
-                            IsAvailable = true,
+                            IsAvaileble = true,
                             IsMezzanine = true,
                             MotelId = 1,
                             Price = 1200
@@ -344,7 +347,7 @@ namespace WebApiGIS.Migrations
                             Capability = 2,
                             Descripption = "Mô tả cho phòng",
                             Geom = (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.7672 10.0261, 105.7675 10.0261, 105.7675 10.0264, 105.7672 10.0264, 105.7672 10.0261))"),
-                            IsAvailable = true,
+                            IsAvaileble = true,
                             IsMezzanine = true,
                             MotelId = 1,
                             Price = 1300
@@ -355,7 +358,7 @@ namespace WebApiGIS.Migrations
                             Capability = 3,
                             Descripption = "Mô tả cho phòng",
                             Geom = (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.7668 10.0258, 105.767 10.0258, 105.767 10.026, 105.7668 10.026, 105.7668 10.0258))"),
-                            IsAvailable = false,
+                            IsAvaileble = false,
                             IsMezzanine = true,
                             MotelId = 2,
                             Price = 1500
@@ -366,7 +369,7 @@ namespace WebApiGIS.Migrations
                             Capability = 3,
                             Descripption = "Mô tả cho phòng",
                             Geom = (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.7666 10.0257, 105.7669 10.0257, 105.7669 10.0259, 105.7666 10.0259, 105.7666 10.0257))"),
-                            IsAvailable = false,
+                            IsAvaileble = false,
                             IsMezzanine = true,
                             MotelId = 2,
                             Price = 1500
@@ -377,7 +380,7 @@ namespace WebApiGIS.Migrations
                             Capability = 3,
                             Descripption = "Mô tả cho phòng",
                             Geom = (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.7671 10.0259, 105.7673 10.0259, 105.7673 10.0261, 105.7671 10.0261, 105.7671 10.0259))"),
-                            IsAvailable = true,
+                            IsAvaileble = true,
                             IsMezzanine = true,
                             MotelId = 2,
                             Price = 1500
@@ -388,7 +391,7 @@ namespace WebApiGIS.Migrations
                             Capability = 1,
                             Descripption = "Mô tả cho phòng",
                             Geom = (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.7661 10.0265, 105.7663 10.0265, 105.7663 10.0267, 105.7661 10.0267, 105.7661 10.0265))"),
-                            IsAvailable = false,
+                            IsAvaileble = false,
                             IsMezzanine = false,
                             MotelId = 3,
                             Price = 800
@@ -399,7 +402,7 @@ namespace WebApiGIS.Migrations
                             Capability = 1,
                             Descripption = "Mô tả cho phòng",
                             Geom = (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.7663 10.0266, 105.7665 10.0266, 105.7665 10.0268, 105.7663 10.0268, 105.7663 10.0266))"),
-                            IsAvailable = false,
+                            IsAvaileble = false,
                             IsMezzanine = false,
                             MotelId = 3,
                             Price = 800
@@ -410,7 +413,7 @@ namespace WebApiGIS.Migrations
                             Capability = 1,
                             Descripption = "Mô tả cho phòng",
                             Geom = (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.7662 10.0268, 105.7664 10.0268, 105.7664 10.027, 105.7662 10.027, 105.7662 10.0268))"),
-                            IsAvailable = true,
+                            IsAvaileble = true,
                             IsMezzanine = false,
                             MotelId = 3,
                             Price = 800
@@ -478,10 +481,10 @@ namespace WebApiGIS.Migrations
                         {
                             Id = 2,
                             Avatar = "no_avatar.jpg",
-                            Dob = new DateOnly(2004, 11, 3),
+                            Dob = new DateOnly(2004, 10, 30),
                             Email = "admin@gmail.com",
                             Name = "Administrator",
-                            Password = "$2a$11$5eIEERNxTyMadS1Ql5OHT.sgySEJbV0Ul.KEy.1.UDAM8Il0IZqii",
+                            Password = "$2a$11$OGI2IDoda360hds6.SP/Be8IFLD7V3Tc5I44a8gH/T0RgrKqiPjGi",
                             PhoneNumber = "0829376780",
                             RoleId = 1
                         },
@@ -489,10 +492,10 @@ namespace WebApiGIS.Migrations
                         {
                             Id = 3,
                             Avatar = "no_avatar.jpg",
-                            Dob = new DateOnly(1994, 11, 3),
+                            Dob = new DateOnly(1994, 10, 30),
                             Email = "owner@gmail.com",
                             Name = "Owner",
-                            Password = "$2a$11$TFDi9xNAVb.dyGRN7RZiZ.mdZvSJalY6eRllsKJfLUS7H4WHl3npa",
+                            Password = "$2a$11$Gvg/eTxKkp7ye2GdtNn51.h7fshICIcD1scUCga41.XDO9HOYxtTS",
                             PhoneNumber = "0829876785",
                             RoleId = 2
                         },
@@ -500,10 +503,10 @@ namespace WebApiGIS.Migrations
                         {
                             Id = 4,
                             Avatar = "no_avatar.jpg",
-                            Dob = new DateOnly(1999, 11, 3),
+                            Dob = new DateOnly(1999, 10, 30),
                             Email = "user@gmail.com",
                             Name = "User",
-                            Password = "$2a$11$d0PbJx/OLL0O.wDOKxAAzOSIFoHv/e8hk0f4fzhCT3T2kZclnFOCe",
+                            Password = "$2a$11$3h4pYY8204geNugv520DHeyisK9Am6eiAj1chvOdRpLSFxIuEmaMC",
                             PhoneNumber = "0829123746",
                             RoleId = 3
                         });

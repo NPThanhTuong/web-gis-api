@@ -212,7 +212,7 @@ namespace WebApiGIS.Data
                     Price = 1200,
                     Capability = 2,
                     Descripption = "Mô tả cho phòng",
-                    IsAvaileble = true,
+                    IsAvailable = true,
                     IsMezzanine = true,
                     MotelId = 1,
                     Geom = new Polygon(new LinearRing(
@@ -231,7 +231,7 @@ namespace WebApiGIS.Data
                     Price = 1200,
                     Capability = 2,
                     Descripption = "Mô tả cho phòng",
-                    IsAvaileble = true,
+                    IsAvailable = true,
                     IsMezzanine = true,
                     MotelId = 1,
                     Geom = new Polygon(new LinearRing(
@@ -250,7 +250,7 @@ namespace WebApiGIS.Data
                     Price = 1300,
                     Capability = 2,
                     Descripption = "Mô tả cho phòng",
-                    IsAvaileble = true,
+                    IsAvailable = true,
                     IsMezzanine = true,
                     MotelId = 1,
                     Geom = new Polygon(new LinearRing(
@@ -269,7 +269,7 @@ namespace WebApiGIS.Data
                     Price = 1500,
                     Capability = 3,
                     Descripption = "Mô tả cho phòng",
-                    IsAvaileble = false,
+                    IsAvailable = false,
                     IsMezzanine = true,
                     MotelId = 2,
                     Geom = new Polygon(new LinearRing(
@@ -288,7 +288,7 @@ namespace WebApiGIS.Data
                     Price = 1500,
                     Capability = 3,
                     Descripption = "Mô tả cho phòng",
-                    IsAvaileble = false,
+                    IsAvailable = false,
                     IsMezzanine = true,
                     MotelId = 2,
                     Geom = new Polygon(new LinearRing(
@@ -307,7 +307,7 @@ namespace WebApiGIS.Data
                     Price = 1500,
                     Capability = 3,
                     Descripption = "Mô tả cho phòng",
-                    IsAvaileble = true,
+                    IsAvailable = true,
                     IsMezzanine = true,
                     MotelId = 2,
                     Geom = new Polygon(new LinearRing(
@@ -326,7 +326,7 @@ namespace WebApiGIS.Data
                     Price = 800,
                     Capability = 1,
                     Descripption = "Mô tả cho phòng",
-                    IsAvaileble = false,
+                    IsAvailable = false,
                     IsMezzanine = false,
                     MotelId = 3,
                     Geom = new Polygon(new LinearRing(
@@ -345,7 +345,7 @@ namespace WebApiGIS.Data
                     Price = 800,
                     Capability = 1,
                     Descripption = "Mô tả cho phòng",
-                    IsAvaileble = false,
+                    IsAvailable = false,
                     IsMezzanine = false,
                     MotelId = 3,
                     Geom = new Polygon(new LinearRing(
@@ -364,7 +364,7 @@ namespace WebApiGIS.Data
                     Price = 800,
                     Capability = 1,
                     Descripption = "Mô tả cho phòng",
-                    IsAvaileble = true,
+                    IsAvailable = true,
                     IsMezzanine = false,
                     MotelId = 3,
                     Geom = new Polygon(new LinearRing(
