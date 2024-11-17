@@ -6,7 +6,7 @@ namespace WebApiGIS.Models
     {
         public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
-        public DateOnly Dob { get; set; }
+        public DateOnly? Dob { get; set; }
         public string Email { get; set; } = string.Empty;
         public string PhoneNumber { get; set; } = string.Empty;
         public string Avatar { get; set; } = string.Empty;
@@ -16,6 +16,6 @@ namespace WebApiGIS.Models
         [ForeignKey(nameof(RoleId))]
         public Role Role { get; set; } = null!;
 
-        public ICollection<User> Users { get; set; } = [];
+        public ICollection<Motel> Motels { get; set; } = [];
     }
 }

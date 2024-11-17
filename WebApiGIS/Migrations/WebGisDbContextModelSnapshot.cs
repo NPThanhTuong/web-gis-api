@@ -1863,7 +1863,7 @@ namespace WebApiGIS.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<DateOnly>("Dob")
+                    b.Property<DateOnly?>("Dob")
                         .HasColumnType("date");
 
                     b.Property<string>("Email")
@@ -1885,14 +1885,9 @@ namespace WebApiGIS.Migrations
                     b.Property<int>("RoleId")
                         .HasColumnType("integer");
 
-                    b.Property<int?>("UserId")
-                        .HasColumnType("integer");
-
                     b.HasKey("Id");
 
                     b.HasIndex("RoleId");
-
-                    b.HasIndex("UserId");
 
                     b.ToTable("Users");
 
@@ -1912,10 +1907,10 @@ namespace WebApiGIS.Migrations
                         {
                             Id = 2,
                             Avatar = "no_avatar.jpg",
-                            Dob = new DateOnly(2004, 11, 17),
+                            Dob = new DateOnly(2004, 11, 14),
                             Email = "admin@gmail.com",
                             Name = "Administrator",
-                            Password = "$2a$11$aag57i.56R.gPPbWC3375O9/sQfbH88.isLTmnR0tbBK23KDMvPja",
+                            Password = "$2a$11$PMYdMKKd2guxrR8zogQZjOyHzchtt8cUkyNwP6ef4FbNh5Umdq87K",
                             PhoneNumber = "0829376780",
                             RoleId = 1
                         },
@@ -1923,10 +1918,10 @@ namespace WebApiGIS.Migrations
                         {
                             Id = 3,
                             Avatar = "no_avatar.jpg",
-                            Dob = new DateOnly(1994, 11, 17),
+                            Dob = new DateOnly(1994, 11, 14),
                             Email = "owner@gmail.com",
                             Name = "Owner",
-                            Password = "$2a$11$q/v4D.c0pwK8RDPvSLX0xe3/1lT0uOd/I7NxxeSWGQYJYoHJsF1PC",
+                            Password = "$2a$11$UKJXXZa8dAwGLSN21h78puHFAwVfGEuTE4ctBWiJ.WJEwNrvNvTf2",
                             PhoneNumber = "0829876785",
                             RoleId = 2
                         },
@@ -1934,10 +1929,10 @@ namespace WebApiGIS.Migrations
                         {
                             Id = 4,
                             Avatar = "no_avatar.jpg",
-                            Dob = new DateOnly(1999, 11, 17),
+                            Dob = new DateOnly(1999, 11, 14),
                             Email = "user@gmail.com",
                             Name = "User",
-                            Password = "$2a$11$xBkmyCElW7Bqdi1ce9pFMO7GM1DcRl2p/94XdpfTGeEcUAjFosF/G",
+                            Password = "$2a$11$4eRlrOkqrm6JBsMogUQq8uY8RdsJK1LsfjEgfzY5/d55/bs8drMLa",
                             PhoneNumber = "0829123746",
                             RoleId = 3
                         });
@@ -1965,7 +1960,7 @@ namespace WebApiGIS.Migrations
             modelBuilder.Entity("WebApiGIS.Models.Motel", b =>
                 {
                     b.HasOne("WebApiGIS.Models.User", "User")
-                        .WithMany()
+                        .WithMany("Motels")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -2003,10 +1998,6 @@ namespace WebApiGIS.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("WebApiGIS.Models.User", null)
-                        .WithMany("Users")
-                        .HasForeignKey("UserId");
-
                     b.Navigation("Role");
                 });
 
@@ -2032,7 +2023,7 @@ namespace WebApiGIS.Migrations
 
             modelBuilder.Entity("WebApiGIS.Models.User", b =>
                 {
-                    b.Navigation("Users");
+                    b.Navigation("Motels");
                 });
 #pragma warning restore 612, 618
         }

@@ -5,6 +5,7 @@
         // Default code
         public const int NoRoomCode = 1;
         public const int NoUserCode = 1;
+        public const int AdminRoleCode = 1;
 
         // Field's Length
         public const int DisplayNameLength = 32;
@@ -31,7 +32,6 @@
         public const string AdminRoleName = "ADMIN";
         public const string UserRoleName = "USER";
         public const string OwnerRoleName = "OWNER";
-
 
     }
 }
