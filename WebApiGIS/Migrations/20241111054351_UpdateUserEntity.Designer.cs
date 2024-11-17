@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using NetTopologySuite.Geometries;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
@@ -12,9 +13,11 @@ using WebApiGIS.Data;
 namespace WebApiGIS.Migrations
 {
     [DbContext(typeof(WebGisDbContext))]
-    partial class WebGisDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241111054351_UpdateUserEntity")]
+    partial class UpdateUserEntity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -473,10 +476,10 @@ namespace WebApiGIS.Migrations
                         {
                             Id = 2,
                             Avatar = "no_avatar.jpg",
-                            Dob = new DateOnly(2004, 11, 14),
+                            Dob = new DateOnly(2004, 11, 11),
                             Email = "admin@gmail.com",
                             Name = "Administrator",
-                            Password = "$2a$11$PMYdMKKd2guxrR8zogQZjOyHzchtt8cUkyNwP6ef4FbNh5Umdq87K",
+                            Password = "$2a$11$9Wim4FkKMJi3avGUqd51Ke9v7rs5bQW/VE6J.tThPVRK6cHV/ZQry",
                             PhoneNumber = "0829376780",
                             RoleId = 1
                         },
@@ -484,10 +487,10 @@ namespace WebApiGIS.Migrations
                         {
                             Id = 3,
                             Avatar = "no_avatar.jpg",
-                            Dob = new DateOnly(1994, 11, 14),
+                            Dob = new DateOnly(1994, 11, 11),
                             Email = "owner@gmail.com",
                             Name = "Owner",
-                            Password = "$2a$11$UKJXXZa8dAwGLSN21h78puHFAwVfGEuTE4ctBWiJ.WJEwNrvNvTf2",
+                            Password = "$2a$11$fP3ocSMuIEXgI1ix8K0D9uc9aRcNroVb4DnV3TOvFZsovfNmCcmFW",
                             PhoneNumber = "0829876785",
                             RoleId = 2
                         },
@@ -495,10 +498,10 @@ namespace WebApiGIS.Migrations
                         {
                             Id = 4,
                             Avatar = "no_avatar.jpg",
-                            Dob = new DateOnly(1999, 11, 14),
+                            Dob = new DateOnly(1999, 11, 11),
                             Email = "user@gmail.com",
                             Name = "User",
-                            Password = "$2a$11$4eRlrOkqrm6JBsMogUQq8uY8RdsJK1LsfjEgfzY5/d55/bs8drMLa",
+                            Password = "$2a$11$Mv0nMcC83simMhAJjcEaHeVvHFYfSSpdnT2wI/GXRNxfGhVaZiHxS",
                             PhoneNumber = "0829123746",
                             RoleId = 3
                         });

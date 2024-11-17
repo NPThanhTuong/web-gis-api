@@ -7,6 +7,7 @@ using System.Security.Claims;
 using System.Text;
 using WebApiGIS.Data;
 using WebApiGIS.Dtos.Request;
+using WebApiGIS.Dtos.Response;
 using WebApiGIS.Models;
 using WebApiGIS.Utils;
 using WebApiGIS.Validators;
@@ -65,7 +66,9 @@ namespace WebApiGIS.Controllers
                 );
                 var tokenString = new JwtSecurityTokenHandler().WriteToken(token);
 
-                return Ok(new { token = tokenString });
+                var userRes = _mapper.Map<UserRes>(user);
+
+                return Ok(new { token = tokenString, user = userRes });
             }
             catch (Exception)
             {
@@ -75,8 +78,7 @@ namespace WebApiGIS.Controllers
             }
         }
 
-        [HttpPost]
-        [Route("register")]
+        [HttpPost("register")]
         public async Task<ActionResult> Register([FromBody] RegisterReq registerReq)
         {
             try

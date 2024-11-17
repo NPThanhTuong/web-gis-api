@@ -22,10 +22,20 @@ namespace WebApiGIS.Controllers
 
         // GET: api/<MotelsController>
         [HttpGet]
-        public async Task<ActionResult<List<MotelRes>>> GetMotels()
+        public async Task<ActionResult<List<MotelRes>>> GetMotels([FromQuery] string? search)
         {
-            var motels = await _db.Motels
-                .Include(m => m.MotelImages)
+            IQueryable<Motel> query = _db.Motels
+                .Include(m => m.MotelImages);
+
+            if (!string.IsNullOrEmpty(search))
+            {
+                query = query
+                    .Where(m =>
+                        m.Name.ToLower().Contains(search.ToLower().Trim()) ||
+                        m.Description.Contains(search.Trim()));
+            }
+
+            var motels = await query
                 .ToListAsync();
 
             var result = _mapper.Map<List<MotelRes>>(motels);
@@ -221,6 +231,21 @@ namespace WebApiGIS.Controllers
                     StatusCodes.Status500InternalServerError,
                     new { message = "Something went wrong!" });
             }
+        }
+
+        [HttpGet("{id}/rooms")]
+        public async Task<ActionResult<List<RoomRes>>> GetRoomOfMotel(int id)
+        {
+            if (id <= 0)
+                return BadRequest(new { message = "Id is invalid!" });
+
+            var rooms = await _db.Rooms
+                .Where(r => r.MotelId == id)
+                .ToListAsync();
+
+            var result = _mapper.Map<List<RoomRes>>(rooms);
+
+            return Ok(result);
         }
     }
 }

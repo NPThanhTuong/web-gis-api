@@ -23,11 +23,6 @@ namespace WebApiGIS.Validators
             RuleFor(r => r.Password)
                 .MinimumLength(ConstConfig.MinPasswordLength)
                 .MaximumLength(ConstConfig.MaxPasswordLength);
-
-            RuleFor(r => r.ConfirmPassword)
-                .NotEmpty()
-                .Equal(r => r.Password)
-                .WithMessage("Confirm password is not matched!");
         }
     }
 }
