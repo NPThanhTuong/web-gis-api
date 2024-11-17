@@ -1,0 +1,1110 @@
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
+using NetTopologySuite.Geometries;
+
+#nullable disable
+
+#pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
+
+namespace WebApiGIS.Migrations
+{
+    /// <inheritdoc />
+    public partial class SeedData1 : Migration
+    {
+        /// <inheritdoc />
+        protected override void Up(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.UpdateData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 1,
+                column: "Geom",
+                value: (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.76651147 10.02616132)"));
+
+            migrationBuilder.UpdateData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 2,
+                column: "Geom",
+                value: (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.76699673 10.02602386)"));
+
+            migrationBuilder.UpdateData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 3,
+                column: "Geom",
+                value: (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.76631803 10.02661963)"));
+
+            migrationBuilder.InsertData(
+                table: "Motels",
+                columns: new[] { "Id", "Description", "Geom", "Name", "UserId" },
+                values: new object[,]
+                {
+                    { 4, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.76543647 10.02658606)"), "Nhà Trọ 51D5", 1 },
+                    { 5, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.7653265 10.02651541)"), "Nhà Trọ Hồng Mai", 1 },
+                    { 6, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.76708326 10.02615788)"), "Nhà Trọ Phú", 1 },
+                    { 7, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.76793433 10.0254256)"), "Nhà Trọ Cô Huyền", 1 },
+                    { 8, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.76906116 10.02483667)"), "Nhà Trọ 162/1", 1 },
+                    { 9, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.76447833 10.02523783)"), "Nhà Trọ Lâm Thành", 1 },
+                    { 10, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.76482417 10.02520947)"), "Nhà Trọ Ngọc Thắm", 1 },
+                    { 11, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.76466538 10.0256084)"), "Nhà Trọ Anh Hà", 1 },
+                    { 12, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.76286885 10.02724987)"), "Nhà Trọ Thiên Thanh", 1 },
+                    { 13, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.7623697 10.02723936)"), "Nhà Trọ Thùy Dung", 1 },
+                    { 14, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.76207943 10.02771621)"), "Nhà Trọ Hồ Bún Xáng", 1 },
+                    { 15, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.76468957 10.02371891)"), "Nhà Trọ Bác Nhựt", 1 },
+                    { 16, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.76553482 10.02335208)"), "Nhà Trọ 228", 1 },
+                    { 17, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.76464028 10.02421123)"), "Nhà Trọ Bác Ba Lai", 1 },
+                    { 18, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.76869363 10.02310219)"), "Nhà Trọ 35", 1 },
+                    { 19, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.7679727 10.02285241)"), "Nhà Trọ 172E", 1 },
+                    { 20, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.76868212 10.02458309)"), "Nhà Trọ Tôn Nữ Minh Phương", 1 },
+                    { 21, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.77063478 10.02743079)"), "Nhà Trọ Bảo Ngọc", 1 },
+                    { 22, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.77157813 10.0277757)"), "Nhà Trọ Phú Quý", 1 },
+                    { 23, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.77178532 10.02760614)"), "Nhà Trọ Huỳnh Liên", 1 },
+                    { 24, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.77204347 10.02757789)"), "Nhà Trọ Minh Thông", 1 },
+                    { 25, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.77180066 10.02744434)"), "Nhà Trọ Yến Trang", 1 },
+                    { 26, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.771493 10.0275105)"), "Nhà Trọ Hồng Ngọc", 1 },
+                    { 27, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.7742197 10.02773533)"), "Nhà Trọ D20", 1 },
+                    { 28, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.76382451 10.02059803)"), "Nhà Trọ Nguyễn Thị Thu Hiền", 1 },
+                    { 29, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.76312068 10.02136834)"), "Nhà Trọ Số 5", 1 },
+                    { 30, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.76040846 10.02226578)"), "Nhà Trọ Gia Hân", 1 },
+                    { 31, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.75794523 10.02580295)"), "Nhà Trọ Lý Mỹ Lan", 1 },
+                    { 32, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.75666203 10.02686793)"), "Nhà Trọ Nguyễn Văn Hai", 1 },
+                    { 33, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.75654512 10.02694981)"), "Nhà Trọ Minh Phát", 1 },
+                    { 34, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.75554082 10.02682668)"), "Nhà Trọ Thanh Vinh", 1 },
+                    { 35, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.75547299 10.02719749)"), "Nhà Trọ Nguyễn Thị Hải", 1 },
+                    { 36, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.75558096 10.02762116)"), "Nhà Trọ Bình Khánh", 1 },
+                    { 37, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.75515522 10.02793749)"), "Nhà Trọ Nguyễn Thị Hiền", 1 },
+                    { 38, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.7549654 10.02721379)"), "Nhà Trọ Hoà Thảo", 1 },
+                    { 39, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.75444251 10.0271388)"), "Nhà Trọ Hai Thìn 2", 1 },
+                    { 40, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.75433058 10.02669408)"), "Nhà Trọ Minh Tiến", 1 },
+                    { 41, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.75411332 10.02663465)"), "Nhà Trọ Hai Lừng", 1 },
+                    { 42, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.75405456 10.02684665)"), "Nhà Trọ Tài Lộc", 1 },
+                    { 43, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.75284905 10.02620235)"), "Nhà Trọ Ngân An", 1 },
+                    { 44, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.75230807 10.02615985)"), "Nhà Trọ 333J", 1 },
+                    { 45, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.7533084 10.02519691)"), "Nhà Trọ Thành Phát", 1 },
+                    { 46, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.75277908 10.02527699)"), "Nhà Trọ Dì Tám", 1 },
+                    { 47, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.75325866 10.02575848)"), "Nhà Trọ Gia Du", 1 },
+                    { 48, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.75167063 10.02558346)"), "Nhà Trọ Thế Vinh", 1 },
+                    { 49, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.75779927 10.02157943)"), "Nhà Trọ Trí Ngân", 1 },
+                    { 50, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.75811629 10.02162671)"), "Nhà Trọ Phạm Dung", 1 },
+                    { 51, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.75854999 10.02166691)"), "Nhà Trọ Triều Tân", 1 },
+                    { 52, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.7595866 10.02184323)"), "Nhà Trọ Trương Tuấn", 1 },
+                    { 53, "Đây là mô tả cho khu nhà trọ sinh viên", (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.75969657 10.02174418)"), "Nhà Trọ Hưng Lợi", 1 }
+                });
+
+            migrationBuilder.UpdateData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 1,
+                column: "Geom",
+                value: (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76650962 10.02617579, 105.76654717 10.02621871, 105.76657936 10.02618767, 105.76654046 10.02615003, 105.76650962 10.02617579))"));
+
+            migrationBuilder.UpdateData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 2,
+                column: "Geom",
+                value: (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76657802 10.02624776, 105.76661959 10.02628474, 105.76666385 10.02624446, 105.76663099 10.0261989, 105.76657802 10.02624776))"));
+
+            migrationBuilder.UpdateData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 3,
+                column: "Geom",
+                value: (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.7666739 10.0263435, 105.76672822 10.0262953, 105.76669469 10.02626823, 105.7666444 10.02631379, 105.7666739 10.0263435))"));
+
+            migrationBuilder.UpdateData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 4,
+                column: "Geom",
+                value: (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76699595 10.0260262, 105.76702613 10.02599583, 105.76700802 10.025978, 105.7669812 10.026013, 105.76699595 10.0260262))"));
+
+            migrationBuilder.UpdateData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 5,
+                column: "Geom",
+                value: (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76696108 10.02599319, 105.76699796 10.02596677, 105.76696779 10.02593904, 105.76693024 10.02596942, 105.76696108 10.02599319))"));
+
+            migrationBuilder.UpdateData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 6,
+                column: "Geom",
+                value: (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76691481 10.02595423, 105.76694164 10.02591725, 105.76691481 10.02589678, 105.76688732 10.02592848, 105.76691481 10.02595423))"));
+
+            migrationBuilder.UpdateData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 7,
+                column: "Geom",
+                value: (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.766301 10.02666573, 105.76632849 10.02663866, 105.76630837 10.02661423, 105.76628021 10.0266446, 105.766301 10.02666573))"));
+
+            migrationBuilder.UpdateData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 8,
+                column: "Geom",
+                value: (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76625339 10.02661885, 105.76628625 10.02659508, 105.76625607 10.02656603, 105.76621182 10.02657989, 105.76625339 10.02661885))"));
+
+            migrationBuilder.UpdateData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 9,
+                column: "Geom",
+                value: (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76634593 10.02662083, 105.76637677 10.02660036, 105.76634861 10.02657263, 105.76630837 10.02658187, 105.76634593 10.02662083))"));
+
+            migrationBuilder.UpdateData(
+                table: "Users",
+                keyColumn: "Id",
+                keyValue: 2,
+                columns: new[] { "Dob", "Password" },
+                values: new object[] { new DateOnly(2004, 11, 17), "$2a$11$aag57i.56R.gPPbWC3375O9/sQfbH88.isLTmnR0tbBK23KDMvPja" });
+
+            migrationBuilder.UpdateData(
+                table: "Users",
+                keyColumn: "Id",
+                keyValue: 3,
+                columns: new[] { "Dob", "Password" },
+                values: new object[] { new DateOnly(1994, 11, 17), "$2a$11$q/v4D.c0pwK8RDPvSLX0xe3/1lT0uOd/I7NxxeSWGQYJYoHJsF1PC" });
+
+            migrationBuilder.UpdateData(
+                table: "Users",
+                keyColumn: "Id",
+                keyValue: 4,
+                columns: new[] { "Dob", "Password" },
+                values: new object[] { new DateOnly(1999, 11, 17), "$2a$11$xBkmyCElW7Bqdi1ce9pFMO7GM1DcRl2p/94XdpfTGeEcUAjFosF/G" });
+
+            migrationBuilder.InsertData(
+                table: "Rooms",
+                columns: new[] { "Id", "Capability", "Descripption", "Geom", "IsAvailable", "IsMezzanine", "MotelId", "Price" },
+                values: new object[,]
+                {
+                    { 10, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76545436 10.02660629, 105.76542083 10.02656998, 105.76539334 10.02659441, 105.76543223 10.0266261, 105.76545436 10.02660629))"), true, false, 4, 600 },
+                    { 11, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76536786 10.02662214, 105.76540139 10.0266578, 105.76533769 10.02664987, 105.76537524 10.02668553, 105.76536786 10.02662214))"), true, false, 4, 600 },
+                    { 12, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76532109 10.0265141, 105.7653573 10.02655174, 105.76532914 10.02656627, 105.76530366 10.02653193, 105.76532109 10.0265141))"), false, false, 5, 1000 },
+                    { 13, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76535127 10.02660654, 105.76533115 10.02658872, 105.76530433 10.02661975, 105.76532311 10.02663362, 105.76535127 10.02660654))"), true, false, 5, 1000 },
+                    { 14, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76527281 10.02663494, 105.76528287 10.02659994, 105.76527416 10.02656561, 105.76523996 10.02659994, 105.76527281 10.02663494))"), true, false, 5, 1000 },
+                    { 15, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.7670704 10.02611043, 105.7670932 10.02614146, 105.76715086 10.02611109, 105.76711801 10.02607807, 105.7670704 10.02611043))"), true, false, 6, 700 },
+                    { 16, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76706973 10.02616589, 105.76712136 10.02615731, 105.76715623 10.02620683, 105.76712002 10.02622202, 105.76706973 10.02616589))"), false, false, 6, 700 },
+                    { 17, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76721188 10.02633559, 105.76727492 10.02628277, 105.76725614 10.02625305, 105.76718104 10.02629531, 105.76721188 10.02633559))"), false, false, 6, 700 },
+                    { 18, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76795453 10.02539817, 105.76797732 10.02542195, 105.76790356 10.02548269, 105.76788278 10.0254609, 105.76795453 10.02539817))"), false, false, 7, 1400 },
+                    { 19, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76779829 10.02557844, 105.767864 10.02551901, 105.76783383 10.02546883, 105.76779628 10.02550052, 105.76779829 10.02557844))"), false, false, 7, 1400 },
+                    { 20, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76908958 10.02480883, 105.76905203 10.02477647, 105.76903125 10.02480223, 105.76906813 10.0248359, 105.76908958 10.02480883))"), true, false, 8, 1000 },
+                    { 21, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.7690118 10.02490193, 105.76904466 10.02486166, 105.76900442 10.0248326, 105.76897626 10.02487354, 105.7690118 10.02490193))"), false, false, 8, 1000 },
+                    { 22, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76445727 10.02526069, 105.76444386 10.02522966, 105.7645069 10.025194, 105.76454378 10.02520523, 105.76445727 10.02526069))"), false, false, 9, 900 },
+                    { 23, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76481334 10.02528512, 105.76485089 10.02526135, 105.76481401 10.02521117, 105.76478249 10.0252323, 105.76481334 10.02528512))"), true, false, 10, 800 },
+                    { 24, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76487905 10.02524683, 105.76492465 10.02521381, 105.76489246 10.02516627, 105.76484754 10.02519004, 105.76487905 10.02524683))"), false, false, 10, 800 },
+                    { 25, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76496622 10.02519004, 105.7650145 10.02516099, 105.76499372 10.02510552, 105.76491929 10.0251491, 105.76496622 10.02519004))"), false, false, 10, 800 },
+                    { 26, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76509631 10.02511542, 105.76507016 10.02505732, 105.7650373 10.02507911, 105.76505809 10.02513853, 105.76509631 10.02511542))"), true, false, 10, 800 },
+                    { 27, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76466495 10.02560735, 105.76471055 10.02558358, 105.76469312 10.02554264, 105.76464484 10.02557169, 105.76466495 10.02560735))"), false, false, 11, 1100 },
+                    { 28, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76483594 10.02551094, 105.76481315 10.02547463, 105.76477962 10.02553934, 105.7647481 10.02550962, 105.76483594 10.02551094))"), true, false, 11, 1100 },
+                    { 29, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76296054 10.02727302, 105.76294713 10.02723142, 105.76289013 10.02728887, 105.76287538 10.02724397, 105.76296054 10.02727302))"), false, false, 12, 500 },
+                    { 30, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76285996 10.02729613, 105.76284923 10.02725321, 105.76276541 10.02727368, 105.76277547 10.02731594, 105.76285996 10.02729613))"), false, false, 12, 500 },
+                    { 31, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76234687 10.02727035, 105.76234285 10.02723865, 105.76222684 10.0272578, 105.76220739 10.02729412, 105.76234687 10.02727035))"), true, false, 13, 1300 },
+                    { 32, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76203919 10.0277469, 105.76211564 10.0277502, 105.76211631 10.02791198, 105.76204724 10.02790405, 105.76203919 10.0277469))"), true, false, 14, 1000 },
+                    { 33, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76468724 10.02371374, 105.76474156 10.02368733, 105.7647315 10.02366289, 105.76467786 10.02368997, 105.76468724 10.02371374))"), false, false, 15, 900 },
+                    { 34, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.7655786 10.02334896, 105.7655491 10.02331463, 105.76552026 10.02334962, 105.76554105 10.02338066, 105.7655786 10.02334896))"), false, false, 16, 1100 },
+                    { 35, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76550484 10.02340509, 105.76547198 10.02336283, 105.76541834 10.02341301, 105.76545254 10.02345197, 105.76550484 10.02340509))"), false, false, 16, 1100 },
+                    { 36, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76536 10.02353583, 105.76540157 10.02349819, 105.76536268 10.0234632, 105.76532379 10.02349555, 105.76536 10.02353583))"), false, false, 16, 1100 },
+                    { 37, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76463202 10.02421029, 105.76469975 10.02417463, 105.76468768 10.02414029, 105.7646166 10.02417661, 105.76463202 10.02421029))"), false, false, 17, 1400 },
+                    { 38, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76864041 10.02312304, 105.76872624 10.02320624, 105.76877184 10.02317389, 105.76867662 10.02308805, 105.76864041 10.02312304))"), true, false, 18, 900 },
+                    { 39, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76888181 10.02334821, 105.76891131 10.02330133, 105.76884426 10.02324058, 105.76880335 10.02327095, 105.76888181 10.02334821))"), true, false, 18, 900 },
+                    { 40, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76792659 10.02284306, 105.76799767 10.02291702, 105.7680379 10.02289721, 105.76796347 10.02281797, 105.76792659 10.02284306))"), false, false, 19, 600 },
+                    { 41, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76860282 10.02456365, 105.76865244 10.02460327, 105.76868865 10.0245544, 105.76864171 10.02452007, 105.76860282 10.02456365))"), true, false, 20, 1000 },
+                    { 42, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76868731 10.02463034, 105.7687423 10.02467326, 105.76877046 10.02462572, 105.76871682 10.02458082, 105.76868731 10.02463034))"), true, false, 20, 1000 },
+                    { 43, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76885696 10.02476702, 105.7688925 10.02472278, 105.76883081 10.02467326, 105.76878387 10.02471222, 105.76885696 10.02476702))"), false, false, 20, 1000 },
+                    { 44, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.77063785 10.02741815, 105.77062242 10.02738249, 105.7706707 10.02735872, 105.77067473 10.02739372, 105.77063785 10.02741815))"), false, false, 21, 1000 },
+                    { 45, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.77153235 10.02778721, 105.77152765 10.02776476, 105.77158934 10.02775815, 105.77160208 10.02777598, 105.77153235 10.02778721))"), false, false, 22, 900 },
+                    { 46, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.77171474 10.02759638, 105.77172278 10.02763005, 105.77175631 10.02761487, 105.77174692 10.02758779, 105.77171474 10.02759638))"), true, false, 23, 1100 },
+                    { 47, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.77182739 10.0275693, 105.7717999 10.02757657, 105.77180995 10.02763401, 105.77184281 10.02763467, 105.77182739 10.0275693))"), false, false, 23, 1100 },
+                    { 48, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.77173686 10.02765316, 105.77178447 10.02764194, 105.77179453 10.02768354, 105.77174558 10.02770203, 105.77173686 10.02765316))"), true, false, 23, 1100 },
+                    { 49, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.77205323 10.02761794, 105.7720378 10.02755521, 105.77200092 10.02756247, 105.77202439 10.02762388, 105.77205323 10.02761794))"), false, false, 24, 800 },
+                    { 50, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.77197745 10.0275704, 105.77199087 10.02763114, 105.77193655 10.02764633, 105.77191576 10.02758624, 105.77197745 10.0275704))"), false, false, 24, 900 },
+                    { 51, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.77187486 10.02766152, 105.77185676 10.02759945, 105.77188559 10.02759285, 105.77190436 10.02765227, 105.77187486 10.02766152))"), true, false, 24, 1100 },
+                    { 52, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.77176894 10.02749898, 105.7718474 10.02748709, 105.77184472 10.02746332, 105.77176492 10.02747586, 105.77176894 10.02749898))"), false, false, 25, 1100 },
+                    { 53, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.77175821 10.02745077, 105.77184002 10.02744087, 105.77183332 10.02740389, 105.77175486 10.02741314, 105.77175821 10.02745077))"), true, false, 25, 1100 },
+                    { 54, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.7717495 10.02738738, 105.77182594 10.02737682, 105.77182058 10.0273273, 105.77174279 10.02733852, 105.7717495 10.02738738))"), false, false, 25, 1100 },
+                    { 55, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.77173542 10.02731013, 105.7718132 10.02730088, 105.77180784 10.02726391, 105.77173005 10.02727381, 105.77173542 10.02731013))"), false, false, 25, 1100 },
+                    { 56, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.77149862 10.02756959, 105.77153483 10.02756497, 105.77152544 10.02751214, 105.77149058 10.02751742, 105.77149862 10.02756959))"), false, false, 26, 700 },
+                    { 57, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.7741921 10.02774824, 105.77423233 10.02773768, 105.77421758 10.02767627, 105.77417802 10.02769212, 105.7741921 10.02774824))"), true, false, 27, 1000 },
+                    { 58, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.77416461 10.02764127, 105.77420283 10.02762939, 105.77418942 10.02757326, 105.77414986 10.02758449, 105.77416461 10.02764127))"), true, false, 27, 1000 },
+                    { 59, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.7638051 10.02063423, 105.76378767 10.02060122, 105.76384064 10.02056688, 105.76386411 10.02059792, 105.7638051 10.02063423))"), false, false, 28, 900 },
+                    { 60, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76318354 10.02143109, 105.76311715 10.02136704, 105.76305211 10.02143373, 105.76312319 10.02148523, 105.76318354 10.02143109))"), false, false, 29, 1500 },
+                    { 61, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76302864 10.02157966, 105.76306552 10.02154268, 105.7630045 10.02147797, 105.76296427 10.02151627, 105.76302864 10.02157966))"), false, false, 29, 1500 },
+                    { 62, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76034769 10.02228348, 105.76040334 10.02224254, 105.76044089 10.02229933, 105.76038256 10.02232971, 105.76034769 10.02228348))"), true, false, 30, 1000 },
+                    { 63, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76044425 10.02241687, 105.76049789 10.02237791, 105.76047241 10.02233763, 105.7604134 10.02237395, 105.76044425 10.02241687))"), false, false, 30, 1000 },
+                    { 64, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.75793702 10.02584708, 105.75797256 10.02583783, 105.757933 10.02578765, 105.75790752 10.02580349, 105.75793702 10.02584708))"), false, false, 31, 600 },
+                    { 65, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.7566186 10.02691791, 105.75666486 10.02686046, 105.75663938 10.02684263, 105.75659982 10.02690074, 105.7566186 10.02691791))"), false, false, 32, 800 },
+                    { 66, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.75657769 10.02688159, 105.75662061 10.02683009, 105.75658306 10.02679575, 105.75653545 10.02684461, 105.75657769 10.02688159))"), false, false, 32, 800 },
+                    { 67, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.75651198 10.02682612, 105.75655892 10.02677264, 105.75653612 10.02675745, 105.75649052 10.0268083, 105.75651198 10.02682612))"), true, false, 32, 800 },
+                    { 68, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.75653677 10.02697599, 105.75656359 10.02693241, 105.75653945 10.02691657, 105.75651799 10.02696081, 105.75653677 10.02697599))"), false, false, 33, 400 },
+                    { 69, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.75648916 10.02694298, 105.75651195 10.02690204, 105.75646904 10.02687563, 105.75643685 10.02690798, 105.75648916 10.02694298))"), false, false, 33, 400 },
+                    { 70, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.75641607 10.02689544, 105.75644289 10.02685516, 105.75641808 10.02683997, 105.75639126 10.02688025, 105.75641607 10.02689544))"), false, false, 33, 400 },
+                    { 71, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.75554156 10.02683186, 105.75552882 10.02682658, 105.75550736 10.02687016, 105.75552346 10.02687148, 105.75554156 10.02683186))"), true, false, 34, 600 },
+                    { 72, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.75542813 10.02720064, 105.7555086 10.02719139, 105.75551463 10.02723828, 105.7554335 10.02724224, 105.75542813 10.02720064))"), false, false, 35, 1000 },
+                    { 73, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.75544423 10.02733006, 105.75552335 10.02731949, 105.75552067 10.02728582, 105.75543953 10.02728582, 105.75544423 10.02733006))"), true, false, 35, 1000 },
+                    { 74, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.75556218 10.0276271, 105.75558163 10.02761587, 105.75555548 10.02757295, 105.75553469 10.0275789, 105.75556218 10.0276271))"), true, false, 36, 1100 },
+                    { 75, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.75551658 10.02754654, 105.75554341 10.02753466, 105.75551323 10.02747985, 105.75548507 10.02749636, 105.75551658 10.02754654))"), false, false, 36, 1100 },
+                    { 76, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.75515455 10.02794212, 105.75518137 10.02790316, 105.75515656 10.02788137, 105.75512974 10.02791901, 105.75515455 10.02794212))"), false, false, 37, 800 },
+                    { 77, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.75497422 10.02724252, 105.75500574 10.02719762, 105.75495143 10.0271613, 105.75492192 10.02720422, 105.75497422 10.02724252))"), true, false, 38, 1000 },
+                    { 78, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.75502854 10.0271646, 105.75497691 10.02712564, 105.75499903 10.02708933, 105.75505469 10.0271263, 105.75502854 10.0271646))"), true, false, 38, 1000 },
+                    { 79, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.75446055 10.02714435, 105.75439515 10.02711326, 105.7543365 10.02721543, 105.75440191 10.02723875, 105.75446055 10.02714435))"), false, false, 39, 1200 },
+                    { 80, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.75430042 10.02740643, 105.75435229 10.02732092, 105.75429365 10.02728539, 105.75424741 10.02736757, 105.75430042 10.02740643))"), false, false, 39, 1200 },
+                    { 81, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.75435204 10.02670993, 105.75431985 10.02669276, 105.75425414 10.02680766, 105.75429706 10.02681558, 105.75435204 10.02670993))"), false, false, 40, 900 },
+                    { 82, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.7541321 10.02660428, 105.75409321 10.02657787, 105.75403956 10.02668616, 105.75407443 10.02670861, 105.7541321 10.02660428))"), false, false, 41, 800 },
+                    { 83, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.75405992 10.02685062, 105.75422354 10.02693381, 105.75425304 10.02689155, 105.75407602 10.02682024, 105.75405992 10.02685062))"), false, false, 42, 600 },
+                    { 84, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.75284586 10.0261992, 105.75291603 10.02608142, 105.75285861 10.02605158, 105.75279323 10.02616151, 105.75284586 10.0261992))"), true, false, 43, 1000 },
+                    { 85, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.75234428 10.02617438, 105.75230673 10.02615589, 105.7522799 10.02620343, 105.75231343 10.02622588, 105.75234428 10.02617438))"), false, false, 44, 700 },
+                    { 86, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.75226515 10.02630908, 105.75229197 10.02626418, 105.75225174 10.02625163, 105.75223162 10.02628861, 105.75226515 10.02630908))"), false, false, 44, 700 },
+                    { 87, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.75331109 10.02519625, 105.75334327 10.02516786, 105.75332919 10.02515069, 105.75329499 10.02518304, 105.75331109 10.02519625))"), true, false, 45, 500 },
+                    { 88, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.75276433 10.02531397, 105.75279517 10.02525256, 105.75277774 10.02524266, 105.75275091 10.02530605, 105.75276433 10.02531397))"), false, false, 46, 600 },
+                    { 89, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.75326402 10.02576773, 105.75324659 10.02572613, 105.75319093 10.02574792, 105.75320501 10.02578952, 105.75326402 10.02576773))"), false, false, 47, 1100 },
+                    { 90, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.75316612 10.02580801, 105.75315003 10.02576178, 105.75308699 10.02578688, 105.75309504 10.02583244, 105.75316612 10.02580801))"), false, false, 47, 1100 },
+                    { 91, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.75159381 10.02557786, 105.75165166 10.02563015, 105.75170477 10.02559093, 105.75163459 10.02553864, 105.75159381 10.02557786))"), false, false, 48, 800 },
+                    { 92, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.75169623 10.02566003, 105.75176735 10.02572167, 105.75181382 10.02568898, 105.75175408 10.02563762, 105.75169623 10.02566003))"), false, false, 48, 800 },
+                    { 93, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.75186598 10.02580571, 105.75190391 10.02576369, 105.75184606 10.02571139, 105.75180434 10.02574781, 105.75186598 10.02580571))"), false, false, 48, 800 },
+                    { 94, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.75782616 10.02157335, 105.7578126 10.02153565, 105.75774482 10.02155764, 105.75775519 10.02159376, 105.75782616 10.02157335))"), true, false, 49, 1300 },
+                    { 95, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.75770176 10.02161025, 105.75769299 10.0215702, 105.75762361 10.02158984, 105.75763557 10.02162674, 105.75770176 10.02161025))"), true, false, 49, 1300 },
+                    { 96, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.75806318 10.02164165, 105.7581656 10.02161924, 105.75816181 10.02159496, 105.75805749 10.02161551, 105.75806318 10.02164165))"), false, false, 50, 700 },
+                    { 97, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.7585406 10.02167351, 105.75858083 10.02166427, 105.7585634 10.02160748, 105.75852384 10.02161012, 105.7585406 10.02167351))"), false, false, 51, 900 },
+                    { 98, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.75850841 10.02155201, 105.75854664 10.02153683, 105.75852987 10.02147938, 105.75849299 10.02148994, 105.75850841 10.02155201))"), false, false, 51, 900 },
+                    { 99, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.75958459 10.02183993, 105.7596275 10.02189606, 105.75965567 10.02189011, 105.75961141 10.0218221, 105.75958459 10.02183993))"), true, false, 52, 1000 },
+                    { 100, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.75968785 10.02198058, 105.75972943 10.02195218, 105.75970394 10.02191851, 105.75966304 10.02194426, 105.75968785 10.02198058))"), false, false, 52, 1000 },
+                    { 101, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.7596503 10.02176201, 105.75967377 10.02179503, 105.75970797 10.02178182, 105.75968584 10.02174088, 105.7596503 10.02176201))"), false, false, 53, 800 },
+                    { 102, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.75968383 10.0218188, 105.7597187 10.02187163, 105.75977502 10.02185644, 105.75974485 10.0218089, 105.75968383 10.0218188))"), true, false, 53, 800 },
+                    { 103, 1, "Mô tả cho phòng", (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.75976094 10.02193766, 105.75980855 10.02190464, 105.75979112 10.02187757, 105.75974686 10.02191389, 105.75976094 10.02193766))"), false, false, 53, 800 }
+                });
+        }
+
+        /// <inheritdoc />
+        protected override void Down(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 10);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 11);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 12);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 13);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 14);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 15);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 16);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 17);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 18);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 19);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 20);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 21);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 22);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 23);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 24);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 25);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 26);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 27);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 28);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 29);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 30);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 31);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 32);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 33);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 34);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 35);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 36);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 37);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 38);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 39);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 40);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 41);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 42);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 43);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 44);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 45);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 46);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 47);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 48);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 49);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 50);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 51);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 52);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 53);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 54);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 55);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 56);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 57);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 58);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 59);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 60);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 61);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 62);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 63);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 64);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 65);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 66);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 67);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 68);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 69);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 70);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 71);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 72);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 73);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 74);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 75);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 76);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 77);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 78);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 79);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 80);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 81);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 82);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 83);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 84);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 85);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 86);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 87);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 88);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 89);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 90);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 91);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 92);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 93);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 94);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 95);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 96);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 97);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 98);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 99);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 100);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 101);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 102);
+
+            migrationBuilder.DeleteData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 103);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 4);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 5);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 6);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 7);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 8);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 9);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 10);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 11);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 12);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 13);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 14);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 15);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 16);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 17);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 18);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 19);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 20);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 21);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 22);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 23);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 24);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 25);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 26);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 27);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 28);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 29);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 30);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 31);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 32);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 33);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 34);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 35);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 36);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 37);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 38);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 39);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 40);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 41);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 42);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 43);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 44);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 45);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 46);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 47);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 48);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 49);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 50);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 51);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 52);
+
+            migrationBuilder.DeleteData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 53);
+
+            migrationBuilder.UpdateData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 1,
+                column: "Geom",
+                value: (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.766652 10.026272)"));
+
+            migrationBuilder.UpdateData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 2,
+                column: "Geom",
+                value: (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.766984 10.025973)"));
+
+            migrationBuilder.UpdateData(
+                table: "Motels",
+                keyColumn: "Id",
+                keyValue: 3,
+                column: "Geom",
+                value: (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (105.766292 10.026623)"));
+
+            migrationBuilder.UpdateData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 1,
+                column: "Geom",
+                value: (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.7662 10.026, 105.7665 10.026, 105.7665 10.0263, 105.7662 10.0263, 105.7662 10.026))"));
+
+            migrationBuilder.UpdateData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 2,
+                column: "Geom",
+                value: (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.7667 10.026, 105.767 10.026, 105.767 10.0263, 105.7667 10.0263, 105.7667 10.026))"));
+
+            migrationBuilder.UpdateData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 3,
+                column: "Geom",
+                value: (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.7672 10.0261, 105.7675 10.0261, 105.7675 10.0264, 105.7672 10.0264, 105.7672 10.0261))"));
+
+            migrationBuilder.UpdateData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 4,
+                column: "Geom",
+                value: (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.7668 10.0258, 105.767 10.0258, 105.767 10.026, 105.7668 10.026, 105.7668 10.0258))"));
+
+            migrationBuilder.UpdateData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 5,
+                column: "Geom",
+                value: (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.7666 10.0257, 105.7669 10.0257, 105.7669 10.0259, 105.7666 10.0259, 105.7666 10.0257))"));
+
+            migrationBuilder.UpdateData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 6,
+                column: "Geom",
+                value: (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.7671 10.0259, 105.7673 10.0259, 105.7673 10.0261, 105.7671 10.0261, 105.7671 10.0259))"));
+
+            migrationBuilder.UpdateData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 7,
+                column: "Geom",
+                value: (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.7661 10.0265, 105.7663 10.0265, 105.7663 10.0267, 105.7661 10.0267, 105.7661 10.0265))"));
+
+            migrationBuilder.UpdateData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 8,
+                column: "Geom",
+                value: (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.7663 10.0266, 105.7665 10.0266, 105.7665 10.0268, 105.7663 10.0268, 105.7663 10.0266))"));
+
+            migrationBuilder.UpdateData(
+                table: "Rooms",
+                keyColumn: "Id",
+                keyValue: 9,
+                column: "Geom",
+                value: (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.7662 10.0268, 105.7664 10.0268, 105.7664 10.027, 105.7662 10.027, 105.7662 10.0268))"));
+
+            migrationBuilder.UpdateData(
+                table: "Users",
+                keyColumn: "Id",
+                keyValue: 2,
+                columns: new[] { "Dob", "Password" },
+                values: new object[] { new DateOnly(2004, 11, 3), "$2a$11$5eIEERNxTyMadS1Ql5OHT.sgySEJbV0Ul.KEy.1.UDAM8Il0IZqii" });
+
+            migrationBuilder.UpdateData(
+                table: "Users",
+                keyColumn: "Id",
+                keyValue: 3,
+                columns: new[] { "Dob", "Password" },
+                values: new object[] { new DateOnly(1994, 11, 3), "$2a$11$TFDi9xNAVb.dyGRN7RZiZ.mdZvSJalY6eRllsKJfLUS7H4WHl3npa" });
+
+            migrationBuilder.UpdateData(
+                table: "Users",
+                keyColumn: "Id",
+                keyValue: 4,
+                columns: new[] { "Dob", "Password" },
+                values: new object[] { new DateOnly(1999, 11, 3), "$2a$11$d0PbJx/OLL0O.wDOKxAAzOSIFoHv/e8hk0f4fzhCT3T2kZclnFOCe" });
+        }
+    }
+}
