@@ -24,7 +24,7 @@ namespace WebApiGIS.Validators
                 .NotNull()
                 .NotEmpty();
 
-            RuleFor(r => r.Descripption)
+            RuleFor(r => r.Description)
                 .NotNull()
                 .MaximumLength(ConstConfig.DescriptionLength);
 
