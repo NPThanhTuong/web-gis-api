@@ -14,7 +14,7 @@ namespace WebApiGIS.Validators
             RuleFor(r => r.Capability)
                 .GreaterThan(0);
 
-            RuleFor(r => r.Descripption)
+            RuleFor(r => r.Description)
                 .MaximumLength(ConstConfig.DescriptionLength);
 
             RuleFor(r => r.MotelId)

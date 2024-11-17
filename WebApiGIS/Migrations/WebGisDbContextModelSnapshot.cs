@@ -689,7 +689,7 @@ namespace WebApiGIS.Migrations
                     b.Property<int>("Capability")
                         .HasColumnType("integer");
 
-                    b.Property<string>("Descripption")
+                    b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("text");
 
@@ -720,8 +720,9 @@ namespace WebApiGIS.Migrations
                         {
                             Id = 1,
                             Capability = 2,
-                            Descripption = "Mô tả cho phòng",
-                            Geom = (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76650962 10.02617579, 105.76654717 10.02621871, 105.76657936 10.02618767, 105.76654046 10.02615003, 105.76650962 10.02617579))"),
+
+                            Description = "Mô tả cho phòng",
+                            Geom = (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.7662 10.026, 105.7665 10.026, 105.7665 10.0263, 105.7662 10.0263, 105.7662 10.026))"),
                             IsAvailable = true,
                             IsMezzanine = true,
                             MotelId = 1,
@@ -731,8 +732,8 @@ namespace WebApiGIS.Migrations
                         {
                             Id = 2,
                             Capability = 2,
-                            Descripption = "Mô tả cho phòng",
-                            Geom = (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76657802 10.02624776, 105.76661959 10.02628474, 105.76666385 10.02624446, 105.76663099 10.0261989, 105.76657802 10.02624776))"),
+                            Description = "Mô tả cho phòng",
+                            Geom = (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.7667 10.026, 105.767 10.026, 105.767 10.0263, 105.7667 10.0263, 105.7667 10.026))"),
                             IsAvailable = true,
                             IsMezzanine = true,
                             MotelId = 1,
@@ -742,8 +743,9 @@ namespace WebApiGIS.Migrations
                         {
                             Id = 3,
                             Capability = 2,
-                            Descripption = "Mô tả cho phòng",
-                            Geom = (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.7666739 10.0263435, 105.76672822 10.0262953, 105.76669469 10.02626823, 105.7666444 10.02631379, 105.7666739 10.0263435))"),
+
+                            Description = "Mô tả cho phòng",
+                            Geom = (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.7672 10.0261, 105.7675 10.0261, 105.7675 10.0264, 105.7672 10.0264, 105.7672 10.0261))"),
                             IsAvailable = true,
                             IsMezzanine = true,
                             MotelId = 1,
@@ -753,8 +755,9 @@ namespace WebApiGIS.Migrations
                         {
                             Id = 4,
                             Capability = 3,
-                            Descripption = "Mô tả cho phòng",
-                            Geom = (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76699595 10.0260262, 105.76702613 10.02599583, 105.76700802 10.025978, 105.7669812 10.026013, 105.76699595 10.0260262))"),
+
+                            Description = "Mô tả cho phòng",
+                            Geom = (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.7668 10.0258, 105.767 10.0258, 105.767 10.026, 105.7668 10.026, 105.7668 10.0258))"),
                             IsAvailable = false,
                             IsMezzanine = true,
                             MotelId = 2,
@@ -764,8 +767,9 @@ namespace WebApiGIS.Migrations
                         {
                             Id = 5,
                             Capability = 3,
-                            Descripption = "Mô tả cho phòng",
-                            Geom = (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76696108 10.02599319, 105.76699796 10.02596677, 105.76696779 10.02593904, 105.76693024 10.02596942, 105.76696108 10.02599319))"),
+
+                            Description = "Mô tả cho phòng",
+                            Geom = (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.7666 10.0257, 105.7669 10.0257, 105.7669 10.0259, 105.7666 10.0259, 105.7666 10.0257))"),
                             IsAvailable = false,
                             IsMezzanine = true,
                             MotelId = 2,
@@ -775,8 +779,9 @@ namespace WebApiGIS.Migrations
                         {
                             Id = 6,
                             Capability = 3,
-                            Descripption = "Mô tả cho phòng",
-                            Geom = (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76691481 10.02595423, 105.76694164 10.02591725, 105.76691481 10.02589678, 105.76688732 10.02592848, 105.76691481 10.02595423))"),
+
+                            Description = "Mô tả cho phòng",
+                            Geom = (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.7671 10.0259, 105.7673 10.0259, 105.7673 10.0261, 105.7671 10.0261, 105.7671 10.0259))"),
                             IsAvailable = true,
                             IsMezzanine = true,
                             MotelId = 2,
@@ -786,8 +791,9 @@ namespace WebApiGIS.Migrations
                         {
                             Id = 7,
                             Capability = 1,
-                            Descripption = "Mô tả cho phòng",
-                            Geom = (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.766301 10.02666573, 105.76632849 10.02663866, 105.76630837 10.02661423, 105.76628021 10.0266446, 105.766301 10.02666573))"),
+
+                            Description = "Mô tả cho phòng",
+                            Geom = (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.7661 10.0265, 105.7663 10.0265, 105.7663 10.0267, 105.7661 10.0267, 105.7661 10.0265))"),
                             IsAvailable = false,
                             IsMezzanine = false,
                             MotelId = 3,
@@ -797,8 +803,9 @@ namespace WebApiGIS.Migrations
                         {
                             Id = 8,
                             Capability = 1,
-                            Descripption = "Mô tả cho phòng",
-                            Geom = (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76625339 10.02661885, 105.76628625 10.02659508, 105.76625607 10.02656603, 105.76621182 10.02657989, 105.76625339 10.02661885))"),
+
+                            Description = "Mô tả cho phòng",
+                            Geom = (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.7663 10.0266, 105.7665 10.0266, 105.7665 10.0268, 105.7663 10.0268, 105.7663 10.0266))"),
                             IsAvailable = false,
                             IsMezzanine = false,
                             MotelId = 3,
@@ -808,8 +815,9 @@ namespace WebApiGIS.Migrations
                         {
                             Id = 9,
                             Capability = 1,
-                            Descripption = "Mô tả cho phòng",
-                            Geom = (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.76634593 10.02662083, 105.76637677 10.02660036, 105.76634861 10.02657263, 105.76630837 10.02658187, 105.76634593 10.02662083))"),
+
+                            Description = "Mô tả cho phòng",
+                            Geom = (NetTopologySuite.Geometries.Polygon)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POLYGON ((105.7662 10.0268, 105.7664 10.0268, 105.7664 10.027, 105.7662 10.027, 105.7662 10.0268))"),
                             IsAvailable = true,
                             IsMezzanine = false,
                             MotelId = 3,
@@ -1907,10 +1915,10 @@ namespace WebApiGIS.Migrations
                         {
                             Id = 2,
                             Avatar = "no_avatar.jpg",
-                            Dob = new DateOnly(2004, 11, 14),
+                            Dob = new DateOnly(2004, 11, 17),
                             Email = "admin@gmail.com",
                             Name = "Administrator",
-                            Password = "$2a$11$PMYdMKKd2guxrR8zogQZjOyHzchtt8cUkyNwP6ef4FbNh5Umdq87K",
+                            Password = "$2a$11$UbDewD5/7dkhV/.PNS/BCOC8J2bdhIbX1BPZxWXSSP.pRvs9NHVSq",
                             PhoneNumber = "0829376780",
                             RoleId = 1
                         },
@@ -1918,10 +1926,10 @@ namespace WebApiGIS.Migrations
                         {
                             Id = 3,
                             Avatar = "no_avatar.jpg",
-                            Dob = new DateOnly(1994, 11, 14),
+                            Dob = new DateOnly(1994, 11, 17),
                             Email = "owner@gmail.com",
                             Name = "Owner",
-                            Password = "$2a$11$UKJXXZa8dAwGLSN21h78puHFAwVfGEuTE4ctBWiJ.WJEwNrvNvTf2",
+                            Password = "$2a$11$BAbjfhgTbuxx4i2Uc3vOl.6NSeQhDFiZPaZtWo/g01NAxK1ts1WEG",
                             PhoneNumber = "0829876785",
                             RoleId = 2
                         },
@@ -1929,10 +1937,10 @@ namespace WebApiGIS.Migrations
                         {
                             Id = 4,
                             Avatar = "no_avatar.jpg",
-                            Dob = new DateOnly(1999, 11, 14),
+                            Dob = new DateOnly(1999, 11, 17),
                             Email = "user@gmail.com",
                             Name = "User",
-                            Password = "$2a$11$4eRlrOkqrm6JBsMogUQq8uY8RdsJK1LsfjEgfzY5/d55/bs8drMLa",
+                            Password = "$2a$11$RE67/PboyjnsvLEuyjWOFOJ1h22EucXOH9D6/g0KNkMFC07UMYHjy",
                             PhoneNumber = "0829123746",
                             RoleId = 3
                         });

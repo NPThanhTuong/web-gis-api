@@ -85,8 +85,9 @@ namespace WebApiGIS.Controllers
                 await _db.Motels.AddAsync(motel);
                 await _db.SaveChangesAsync();
 
+                var result = _mapper.Map<MotelRes>(motel);
 
-                return Created();
+                return Created("Motels/" + motel.Id, result);
             }
             catch (Exception)
             {
